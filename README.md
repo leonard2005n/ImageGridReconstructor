@@ -77,3 +77,32 @@ Implements the marching squares algorithm:
 This command exits the program and deallocates all resources used during execution.
 
 ---
+## Output Message Table
+
+Below is the table of messages and the corresponding commands used in the project:
+
+| **Message**                                  | **Command**    |
+|----------------------------------------------|----------------|
+| Image successfully read `[height-width]`     | READ           |
+| Error: must be P3                            | READ           |
+| Error: invalid pixel value                   | READ           |
+| Error: pixel read error                             | READ           |
+| Image successfully resized `[new_height-new_width]` | RESIZE        |
+| **P3**                                       | WRITE          |
+| height width                                 | WRITE          |
+| maximum pixel value (255)                    | WRITE          |
+| R G B                                        | WRITE          |
+| ...                                          | WRITE          |
+| R G B                                        | WRITE          |
+| **P3**                                       | INIT_CONTUR    |
+| 4 4                                          | INIT_CONTUR    |
+| 255                                          | INIT_CONTUR    |
+| R G B                                        | INIT_CONTUR    |
+| R G B                                        | INIT_CONTUR    |
+| ...                                          | INIT_CONTUR    |
+| R G B                                        | INIT_CONTUR    |
+| _//Note: 16 such contours are displayed._    | INIT_CONTUR    |
+| Grid successfully calculated `[height-width]`| GRID           |
+| grid matrix                                  | GRID           |
+| Marching Squares successfully applied `[height-width]` | MARCH          |
+| Gigel has finished.                          | EXIT           |
